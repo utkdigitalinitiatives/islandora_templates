@@ -37,6 +37,9 @@
     </dl>
   </div>
 </fieldset>
+  <h4>
+    <?php print l(t('View the MODS record'), "islandora/object/{$solr_fields['PID']['value'][0]}/datastream/MODS/view"); ?>
+  </h4>
 <?php endif; ?>
 <?php else: ?>
   <fieldset <?php $print ? print('class="islandora islandora-metadata"') : print('class="islandora islandora-metadata collapsible collapsed"');?>>
